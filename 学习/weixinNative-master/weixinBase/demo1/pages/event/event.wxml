@@ -1,0 +1,70 @@
+<!--pages/event/event.wxml-->
+<text>pages/event/event.wxml</text>
+
+<view class="block" data-myname="张三" data-age="22" bindtap="onClick">
+  点我
+</view>
+
+<view class="text">
+  姓名：{{name}}  -  年龄：{{age}}
+</view>
+
+------
+
+<view class="box" bindtap="clickBox" 
+style="background:{{color}};width: {{size}}rpx;height: {{size}}rpx;">
+随机数:{{num}}
+</view>
+
+------------
+
+
+
+<view class="out">
+  <input 
+  class="ipt" 
+  type="text"
+  placeholder="请输入用户名"
+  confirm-type="search"
+  bindinput="onInput"
+  bindfocus="onFocus"
+  bindblur="onBlur"
+  />
+
+  <textarea 
+  class="textarea"
+  placeholder="请输入详细的内容"
+  ></textarea>
+
+  <checkbox-group bindchange="checkChange">  
+    <view style="padding-bottom: 20rpx;">
+      <label>
+        <checkbox value="diaoyu"></checkbox>
+        <text>钓鱼</text>
+      </label> 
+    </view>
+    
+    <view style="padding-bottom: 20rpx;">
+      <label>
+        <checkbox checked  value="game"></checkbox>
+        <text>打游戏</text>
+      </label> 
+    </view>
+    
+
+    <view style="padding-bottom: 20rpx;">
+      <label>
+        <checkbox color="red"  value="lookbook"></checkbox>
+        <text>看书</text>
+      </label> 
+    </view>
+    
+  </checkbox-group>
+
+  <button
+  size="default"
+  type="primary"
+  disabled="{{atitle.length}}"
+  >按钮</button>
+</view>
+

@@ -1,0 +1,61 @@
+<van-search model:value="{{value}}" shape="round" use-action-slot background="#BDA066" placeholder="请输入产品名称" bind:search="onSearch">
+
+  <view slot="action" class="searchTitle" bindtap="clickSearch">搜索</view>
+
+</van-search>
+
+
+
+<view class="history" wx:if="{{!isShow && history.length>0}}">
+
+  <view class="top">
+
+    <view class="left">搜索历史</view>
+
+    <view class="right" bindtap="deleteHistory">
+
+      <van-icon name="delete-o" class="van-icon" />
+
+      <view>清空历史</view>
+
+    </view>
+
+  </view>
+
+  <view class="bottom">
+
+    <view class="box" wx:for="{{history}}" wx:key="index" bindtap="clickBox" data-title="{{item.title}}">
+
+      <view class="item">{{item.title}}</view>
+
+    </view>
+
+  </view>
+
+</view>
+
+
+
+<view class="content" wx:if="{{productlist.length}}">
+
+  <view class="count">共检索出<text class="text">{{productlist.length}}</text>款产品</view>
+
+  <view class="body">
+
+    <view class="box" wx:for="{{productlist}}" wx:key="_id">
+
+      <xzs-product-item item="{{item}}"></xzs-product-item>
+
+    </view>
+
+  </view>
+
+</view>
+
+
+
+<view wx:if="{{productlist.length == 0 && result}}">
+
+  <van-empty image="search" description="没有搜索结果" />
+
+</view>

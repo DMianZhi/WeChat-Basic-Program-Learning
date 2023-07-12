@@ -1,0 +1,7 @@
+<view class="content">
+  <view class="cat" wx:for="{{catArr}}" wx:key="id">
+    <view class="pic">
+      <image src="{{item.url}}" mode="aspectFill"/>
+    </view><text>姓名：小猫{{item.id}}</text>
+  </view>
+</view>

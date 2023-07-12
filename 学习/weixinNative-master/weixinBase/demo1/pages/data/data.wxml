@@ -1,0 +1,56 @@
+<!--pages/data/data.wxml-->
+<text>pages/data/data.wxml</text>
+
+<view>
+  我的名字是：{{name}}
+</view>
+
+<view>
+  年龄：{{age}}
+</view>
+
+<view>
+  书籍：{{books}}
+</view>
+
+<view wx:if="{{!bool}}">
+  用户：{{user.name}} - {{user.gender}} - {{user.age}}
+</view>
+<view wx:else>
+  -----{{  user.name +"-" + user.gender +"-"+ user.age  }}
+</view>
+
+
+-----------------
+
+
+<text wx:if="{{num == 1}}">1</text>
+<text wx:elif="{{num==2}}">2</text>
+<text wx:elif="{{num==3}}">3</text>
+<text wx:elif="{{num==4}}">4</text>
+<text wx:elif="{{num==5}}">5</text>
+<text wx:else>格式错误</text>
+
+
+-----------
+
+
+<view wx:for="{{books}}" wx:for-item="row" wx:for-index="idx" wx:key="idx">
+  书名：{{idx+1}} - {{row}}
+</view>
+
+<view>
+  ------------
+</view>
+
+<view class="article" wx:for="{{article}}" wx:key="id">
+  <image src="{{item.picurl}}" mode=""/>
+  <view class="title">
+    {{item.title}}
+  </view>
+  <text class="time">
+    {{item.time}}
+  </text>
+</view>
+
+

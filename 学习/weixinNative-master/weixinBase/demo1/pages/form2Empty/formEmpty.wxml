@@ -1,0 +1,28 @@
+<view class="title">
+    狂飙经典语录
+  </view>
+
+<view class="out"> 
+  
+  <view class="list">
+    <view class="row" wx:for="{{3}}" wx:key="id">
+      <view class="text">{{index+1}}. 标题文字演示</view>
+      <view class="close">
+        <icon type="clear" size="26"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="count">
+    共3条评论
+  </view>
+
+  <view class="comment">
+    <input type="text" 
+    placeholder="请输入评论内容..."
+    placeholder-style="color:#aaa;font-size:28rpx"    
+    />    
+    <button size="mini" type="primary" disabled    
+    >发布</button>
+  </view>
+</view>

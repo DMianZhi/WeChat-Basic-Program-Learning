@@ -1,0 +1,18 @@
+<!--pages/data/data.wxml-->
+<text>pages/data/data.wxml</text>
+<view>
+  {{name}}
+</view>
+<text wx:if="{{num==1}}">1</text>
+<text wx:elif="{{num==2}}">2</text>
+<text wx:elif="{{num==3}}">3</text>
+<text wx:elif="{{num==4}}">4</text>
+<text wx:else>格式错误</text>
+<!-- <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view> -->
+

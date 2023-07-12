@@ -1,0 +1,107 @@
+<MyHeader></MyHeader>
+
+<view 
+  class="box" 
+  hover-class="boxhover" 
+>
+  华强买瓜
+  <view class="inner" hover-class="innerhover" hover-stop-propagation>
+    启强卖鱼
+  </view>
+</view>
+
+
+<view 
+bindtap="goDemo"
+style="width: 100rpx; height: 100rpx; background: #EEE8AA;">
+    <view>
+      <text></text>
+    </view>
+
+    <view>
+      
+    </view>
+</view>
+
+
+<navigator url="/pages/demo/demo?id=123" open-type="switchTab">
+  go demo page
+</navigator>
+
+<navigator url="/pages/event/event">事件页面</navigator>
+
+<view user-select>
+  bbbb
+</view>
+
+<text decode> &lt; 11111  &gt; </text>
+<text user-select>2222</text>
+<text space="nbsp" >3 3  3   3</text>
+
+<icon type="success"/>
+<icon type="search" size="50" color="#c00"/>
+<view>
+  -------
+</view>
+<progress 
+percent="50" 
+show-info 
+border-radius="10"
+stroke-width="3"
+></progress>
+
+
+
+<view style="width: 70rpx; height: 70rpx; background: green;">
+  
+</view>
+
+<scroll-view class="myScroll" scroll-x>
+  <view class="row">1</view>
+  <view class="row">2</view>
+  <view class="row">3</view>
+  <view class="row">4</view>
+  <view class="row">5</view>
+  <view class="row">6</view>
+  <view class="row">7</view>
+  <view class="row">8</view>
+</scroll-view>
+
+<match-media min-width="200" max-width="350">
+  <view>当页面宽度在 300 ~ 500 px 之间时展示这里</view>
+</match-media>
+
+
+<view class="out">
+  <view class="box1"></view>
+  <view class="box2">
+   <!-- <root-portal>
+    <view class="mask">
+    </view>
+   </root-portal>     -->
+  </view>
+</view>
+
+
+
+
+
+<movable-area 
+style="width: 400rpx; height: 400rpx;background: #ccc;overflow: hidden;">
+  <movable-view
+  direction="all"
+  inertia
+  out-of-bounds
+  x="20rpx"
+  y="20rpx"
+  style="width: 150rpx; height: 150rpx; background: green;"
+  >
+    <view>
+      demo
+    </view>
+  </movable-view>
+</movable-area>
+
+<MyFooter name="-首页"></MyFooter>
+
+

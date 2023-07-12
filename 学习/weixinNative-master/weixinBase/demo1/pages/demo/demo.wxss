@@ -1,0 +1,9 @@
+/* pages/demo/demo.wxss */
+.out .img{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.hoverNav{
+  color:#00B26A
+}

@@ -1,0 +1,21 @@
+<XZSheader></XZSheader>
+<view class="banner">
+  <image src="/images/teaBanner.jpg" mode="aspectFill" class="pic" />
+</view>
+<!-- 如果事件为change，第一次点击时数据会重复一遍 -->
+<view class="nav">
+  <van-tabs active="{{ active }}" bind:click="onChange" border title-active-color="var(--themeColor)" color="var(--themeColor)" id="tabs" animated>
+    <van-tab title="{{ item.classname }}" wx:for="{{newsNav}}" wx:key="_id"></van-tab>
+  </van-tabs>
+</view>
+<view class="content">
+  <view class="body">
+    <view class="box" wx:for="{{productArr}}" wx:key="_id" >
+      <XZSproduct item="{{item}}"></XZSproduct>
+    </view>
+  </view>
+  <view class="loadOut">
+      <van-loading size="24px" wx:if="{{loading}}" color="var(--themeColor)" class="noData" ></van-loading>
+      <view class="noData" wx:else="{{isData}}">没有更多数据了~</view>
+    </view> 
+</view>

@@ -1,0 +1,26 @@
+<!-- <view class="content">
+  <view class="box" bindtap="clickBox" style="background-color: {{color}} ;width:{{size}}rpx ;height:{{size}}rpx">
+    随机数：{{num}}
+  </view>
+</view> -->
+<button open-type="contact" type="default">contact</button>
+<button open-type="share">share</button>
+<button open-type="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo">getUserInfo</button>
+<button open-type="openSetting">openSetting</button>
+<button open-type="launchApp">launchApp</button>
+<button open-type="feedback">feedback</button>
+<button open-type="chooseAvatar">chooseAvatar</button>
+<input type="text"/>
+<input type="number"/>
+<input type="digit"/>
+<input type="safe-password"/>
+<input type="nickname"/>
+<input type="text"/>
+--------------------
+<input type="text" confirm-type="done"/>
+<input type="text" confirm-type="go"/>
+<input type="text" confirm-type="next"/>
+<input type="text" confirm-type="search"/>
+<input type="text" confirm-type="send"/>
+<input type="text"/>

@@ -1,0 +1,58 @@
+.box{
+  width: 200px;
+  height: 200px;
+  background: orange;
+}
+.boxhover{
+  background: palegreen;
+}
+
+.box .inner{
+  width: 80px;
+  height: 80px;
+  background: pink;
+}
+.box .innerhover{
+  background: red;
+}
+
+.myScroll{
+  width: 100%;
+  height: 220rpx;
+  background: #eee;
+  white-space: nowrap;  
+}
+.myScroll .row{
+  width: 220rpx;
+  height: 220rpx;
+  background: palegreen;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+.myScroll .row:last-child{
+  margin-right: 0;
+}
+
+
+.out{
+
+}
+
+.out .box1{
+  position: relative;
+  z-index: 10;
+  width: 300rpx;
+  height: 300rpx;
+  background: #77C1FC;
+}
+
+.out .box2{
+  position: relative;
+  width: 350rpx;
+  height: 350rpx;
+  background: palegoldenrod;
+  z-index: 9;
+  left:100px;
+  top:-100px;
+}
+

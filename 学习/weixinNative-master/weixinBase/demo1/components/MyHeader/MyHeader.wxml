@@ -1,0 +1,8 @@
+<view class="header">
+    <view class="big">
+        自定义头部大标题
+    </view>
+    <view class="small">
+      ——咸虾米的小程序开发——
+    </view>
+</view>

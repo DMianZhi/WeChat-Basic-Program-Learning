@@ -1,0 +1,41 @@
+/* pages/event/event.wxss */
+.block{
+  width: 200rpx;
+  height: 200rpx;
+  background: #00B26A;
+}
+.text{
+  font-size: 60rpx;
+}
+
+.box{
+  margin:50rpx;
+  width: 200rpx;
+  height: 200rpx;
+  background: pink;
+  color:#000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.out{
+  padding:30rpx;
+  border:1px solid #ccc;
+  margin:30rpx;
+}
+
+.out .ipt{
+  background: #eee;
+  margin-bottom:20rpx;
+  padding:20rpx;
+}
+
+.out .textarea{
+  background: #eee;
+  margin-bottom:20rpx;
+  width:100%;
+  height: 220rpx;
+  padding:20rpx;
+  box-sizing: border-box;
+}

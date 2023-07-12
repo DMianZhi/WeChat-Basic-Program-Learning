@@ -1,0 +1,8 @@
+<view class="header">
+  <navigator url="/pages/index/index" open-type="reLaunch">
+    <image src="/images/logo.jpg" mode="heightFix" class="logo" />
+  </navigator>
+  <view class="search" bindtap="search">
+    <van-icon name="search" />
+  </view>
+</view>

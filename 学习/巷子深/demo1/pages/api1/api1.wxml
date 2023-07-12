@@ -1,0 +1,13 @@
+<view class="out">
+<view class="form">
+<input type="text" placeholder="请输入标题" bindconfirm="onSubmit" model:value="{{inputValue}}"/>
+</view>
+  <view class="row" wx:for="{{listArr}}" wx:key="_id">
+  <view class="username">
+  标题：{{item.title}}
+  </view>
+  <view class="title">
+  时间：{{item.posttime}}
+  </view>
+  </view>
+</view>

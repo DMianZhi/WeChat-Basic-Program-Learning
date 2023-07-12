@@ -1,0 +1,19 @@
+<Myheader></Myheader>
+<view class="box" hover-class="hoverBox" hover-start-time="1000">
+  <view class="inner">微信小程序</view>
+  <view class="inner">微信小程序</view>
+
+</view>
+<text user-select>1234</text>
+<text space="nbsp">12 3 4</text>
+<text decode>&lt;1234&gt;</text>
+
+<view class="out">
+  <view class="box1"></view>
+  <view class="box2">
+    <!-- <root-portal enable>
+      <view class="mark"></view>
+    </root-portal> -->
+  </view>
+</view>
+<navigator url="/pages/demo1/demo1"> demo1</navigator>

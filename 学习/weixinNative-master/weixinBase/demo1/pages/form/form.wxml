@@ -1,0 +1,35 @@
+<MyHeader></MyHeader>
+
+<view class="title">
+    狂飙经典语录
+  </view>
+
+<view class="out"> 
+  
+  <view class="list">
+    <view class="row" wx:for="{{listArr}}" wx:key="id">
+      <view class="text">{{index+1}}. {{item.title}}</view>
+      <view class="close" bindtap="clickClose" data-index="{{index}}">
+        <icon type="clear" size="26"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="count">
+    共{{listArr.length}}条评论
+  </view>
+
+  <view class="comment">
+    <input type="text" 
+    placeholder="请输入评论内容..."
+    placeholder-style="color:#aaa;font-size:28rpx"
+    model:value="{{iptVal}}"
+    bindconfirm="onSubmit"
+    />    
+    <button size="mini" type="primary" disabled="{{!iptVal.length}}"
+    bindtap="onSubmit"    
+    >发布</button>
+  </view>
+</view>
+
+<MyFooter name="--我的"></MyFooter>

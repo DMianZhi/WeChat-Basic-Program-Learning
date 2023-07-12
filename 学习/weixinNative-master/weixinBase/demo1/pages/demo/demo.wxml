@@ -1,0 +1,42 @@
+
+
+<image src="../../static/images/kuangbiao1.jpg" style="width: 100%;" mode="widthFix"/>
+
+<MyHeader></MyHeader>
+
+
+<navigator url="/pages/index/index" 	hover-class="hoverNav">首页</navigator>
+
+
+<navigator url="/pages/logs/logs" class="out">
+  <image src="/static/images/dog.jpg" class="img" mode=""/>
+</navigator>
+
+
+<image src="../../static/images/pic3.jpg" mode="heightFix"/>
+
+<image src="../../static/images/kuangbiao1.jpg" mode="aspectFit"/>
+<image src="../../static/images/pic3.jpg" />
+
+<video 
+style="width: 100%; height: 400rpx;"
+src="https://mp-c422c6b7-799d-4ff5-9531-5051a0481131.cdn.bspapp.com/cloudstorage/71132ae6-26bf-4693-a371-09ef63ef98c7.mp4"
+object-fit="fill"
+></video>
+
+
+
+
+<image show-menu-by-longpress src="/static/images/yazi.gif" mode="aspectFill"/>
+<image src="https://mp-c422c6b7-799d-4ff5-9531-5051a0481131.cdn.bspapp.com/cloudstorage/77917961-f3ce-4562-b128-e60721e38cc4.jpg" mode="aspectFill"/>
+
+<image src="/static/images/kuangbiao3.webp" webp mode="aspectFill"/>
+
+
+<MyFooter name="~~~文章页面"></MyFooter>
+
+
+
+
+
+

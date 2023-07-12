@@ -1,0 +1,50 @@
+{    
+  "pages":[
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/logs/logs",
+    "pages/data/data",
+    "pages/event/event",
+    "pages/form/form",
+    "pages/form2Empty/formEmpty",
+    "pages/formKT/formKT",
+    "pages/api/api",
+    "pages/api2/api2",
+    "pages/api3/api3",
+    "pages/api4/api4"
+  ],
+  "window":{    
+    "navigationBarBackgroundColor": "#00B26A",
+    "navigationBarTitleText": "小程序学习项目",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#FDD446"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#01F8E4",
+    "backgroundColor":"#efefef",
+    
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/index/index",
+      "iconPath": "static/images/icons/home.png",
+      "selectedIconPath": "static/images/icons/home-fill.png"
+    },{
+      "text": "文章",
+      "pagePath": "pages/demo/demo",
+      "iconPath": "static/images/icons/file-text.png",
+      "selectedIconPath": "static/images/icons/file-text-fill.png"
+    },{
+      "text":"我的",
+      "pagePath": "pages/form/form",
+      "iconPath": "static/images/icons/trophy.png",
+      "selectedIconPath": "static/images/icons/trophy-fill.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "MyHeader":"/components/MyHeader/MyHeader",
+    "MyFooter":"/components/MyFooter/MyFooter"
+  }
+}

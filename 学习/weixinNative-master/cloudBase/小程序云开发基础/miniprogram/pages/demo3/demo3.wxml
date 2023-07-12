@@ -1,0 +1,10 @@
+<button type="primary" bindtap="getData">获取数据</button>
+
+<view wx:for="{{dataList}}" wx:key="index">
+  <view>{{index+1}}.{{item.title}}</view>
+  <view>点击次数：{{item.hits}}</view>
+  <view>作者：{{item.author}}</view>
+  ---------
+</view>
+
+<button type="primary" bindtap="upDate">更新数据</button>
